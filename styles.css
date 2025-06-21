@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg_sign.png);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  padding: 70px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.logo img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forgot-password-container {
+  background: white;
+  border-radius: 24px;
+  padding: 120px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 550px;
+  height: 567px;
+  text-align: center;
+}
+
+.login-container {
+  background: white;
+  border-radius: 24px;
+  padding: 30px 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 550px;
+  height: 567px;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #212121;
+  font-size: 32px;
+  margin-bottom: 20px;
+  opacity: 70%;
+  text-align: left;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #437f97;
+  font-size: 48px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 18px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #666;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.input-field:focus {
+  border-color: #4a90a4;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(74, 144, 164, 0.1);
+}
+
+.input-field::placeholder {
+  color: #999;
+}
+
+.send-button_forgot {
+  width: 100%;
+  max-width: 200px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #4a90a4 0%, #357a8a 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 164, 0.3);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.send-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 164, 0.4);
+}
+
+.send-button:active {
+  transform: translateY(0);
+}
+
+.send-button_login {
+  width: 100%;
+  max-width: 200px;
+  padding: 16px 16px;
+  background: linear-gradient(135deg, #4a90a4 0%, #357a8a 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 164, 0.3);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.trouble a {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #212121;
+  font-variation-settings: "wdth" 100;
+  text-decoration: none;
+}
+
+.trouble {
+  line-height: 25px;
+  margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .forgot-password-container {
+    padding: 40px 30px;
+    margin: 80px 0 20px 0;
+    border-radius: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .input-field {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .send-button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .logo {
+    top: 15px;
+    left: 15px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .forgot-password-container {
+    padding: 30px 25px;
+    margin: 70px 0 15px 0;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .input-field {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .send-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    max-width: 180px;
+  }
+}
